@@ -19,9 +19,6 @@ def get_contestant_name(data, occupation)
           v['name']
           binding.pry
           end
-        
-        
-          
     end
   end
 

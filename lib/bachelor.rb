@@ -15,7 +15,7 @@ def get_contestant_name(data, occupation)
     data.each do |x|
       bypass_season_data = x[1].find do |v|
         v.include?('occupation') == occupation
-        v['name']
+        contestants_name = v['name']
       #binding.pry
       end
     end 

@@ -16,9 +16,11 @@ def get_contestant_name(data, occupation)
         
         v.find  do |x| 
           x['occupation'] == occupation
+          v['name']
           binding.pry
           end
-        v['name']
+        
+        
           
     end
   end

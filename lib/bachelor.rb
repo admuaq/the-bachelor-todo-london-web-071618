@@ -12,7 +12,7 @@ end
 def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
-      bypass_season_data = data.each do |k, v|
+      bypass_season_data = data.collect do |k, v|
         
         v.find  do |x| 
           x['occupation'] == occupation

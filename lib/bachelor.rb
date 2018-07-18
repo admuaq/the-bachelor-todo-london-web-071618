@@ -16,7 +16,8 @@ def get_contestant_name(data, occupation)
         binding.pry
         v['occupation'] == occupation}
         contestants_name = v['name']
-end
+    end
+  end
 
 def count_contestants_by_hometown(data, hometown)
   # code here

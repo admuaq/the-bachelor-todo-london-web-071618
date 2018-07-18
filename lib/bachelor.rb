@@ -18,7 +18,6 @@ def get_contestant_name(data, occupation)
           x['occupation'] == occupation
           x['name']
           binding.pry
-          end
     end
   end
 

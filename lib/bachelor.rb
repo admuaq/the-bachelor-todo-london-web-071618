@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
     data.collect do |x|
-      x
+      bypass_season = x[1]
       binding.pry
     end 
   contestants_name

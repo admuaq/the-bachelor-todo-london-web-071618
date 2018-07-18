@@ -15,7 +15,7 @@ def get_contestant_name(data, occupation)
     data.collect do |x|
     person = x[1].find {|y| y['occupation'] == occupation}
     contestants_name = person['name']
-    #binding.pry
+    binding.pry
     end 
   contestants_name
 end

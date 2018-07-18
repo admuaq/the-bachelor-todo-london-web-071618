@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
     contestants_name = person['name']
     #binding.pry
     end 
-  
+  contestants_name
 end
 
 def count_contestants_by_hometown(data, hometown)

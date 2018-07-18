@@ -15,7 +15,8 @@ def get_contestant_name(data, occupation)
     data.collect do |x|
       bypass_season_data = x[1]
       bypass_season_data.each do |v|
-        v['occupation']include?(occupation)
+        v.include?(occupation)
+        
         
       
       binding.pry

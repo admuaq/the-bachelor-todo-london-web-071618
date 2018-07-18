@@ -17,7 +17,6 @@ def get_contestant_name(data, occupation)
         v.find  {|x| x['occupation'] == occupation}
         v['name']
           binding.pry
-        end
     end
   end
 

@@ -11,6 +11,7 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+    contestants_name = ""
     data.collect do |x|
     person = x[1].find {|y| y['occupation'] == occupation}
     person['name']

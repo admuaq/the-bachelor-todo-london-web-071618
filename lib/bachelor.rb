@@ -13,10 +13,7 @@ def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
     data.collect do |x|
-    person = x[1].find do |y| 
-      y['occupation'] == occupation
-      contestants_name = person['name']
-      end 
+      x
     end 
   contestants_name
 end

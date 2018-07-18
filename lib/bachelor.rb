@@ -14,7 +14,6 @@ def get_contestant_name(data, occupation)
     data.each do |x|
     person = x[1].find {|y| y['occupation'] == occupation}
       puts person['name']
-      binding.pry
     end 
   
 end

@@ -14,7 +14,7 @@ def get_contestant_name(data, occupation)
     data.collect do |x|
     person = x[1].detect {|y| y['occupation'] == occupation}
       x[1][1]['name']
-      #binding.pry
+      binding.pry
     end 
   
 end

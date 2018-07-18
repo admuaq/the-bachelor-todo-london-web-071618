@@ -14,7 +14,7 @@ def get_contestant_name(data, occupation)
     contestants_name = ""
     data.map do |x|
       bypass_season_data = x[1].find do |v|
-        v.include?('occupation') == occupation
+        if v.include?('occupation') == occupation
         contestants_name = v['name']
       #binding.pry
       end

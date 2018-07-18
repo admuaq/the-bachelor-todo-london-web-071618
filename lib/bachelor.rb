@@ -14,9 +14,9 @@ def get_contestant_name(data, occupation)
     contestants_name = ""
       bypass_season_data = data.each do |k, v|
         
-        v.find  {|x| x['occupation'] == occupation}
+        v.find  {|x| x['occupation'] == occupation binding.pry}
         v['name']
-          binding.pry
+          
     end
   end
 

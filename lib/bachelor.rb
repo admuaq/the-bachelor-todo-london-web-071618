@@ -16,6 +16,8 @@ def get_contestant_name(data, occupation)
       bypass_season_data = x[1].find do |v|
         if v.include?('occupation') == occupation
         contestants_name = v['name']
+      else
+        "Cant find Winner"
       #binding.pry
       end
     end 

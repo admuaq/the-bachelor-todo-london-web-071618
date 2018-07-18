@@ -14,6 +14,7 @@ def get_contestant_name(data, occupation)
     contestants_name = ""
     data.collect do |x|
       x
+      binding.pry
     end 
   contestants_name
 end

@@ -12,14 +12,13 @@ end
 def get_contestant_name(data, occupation)
   # code here
     
-      data.each do |v| 
-        je = v.each {|k,value| value}
-          binding.pry
+      bypass_season_data = data.each {|v| v}
+      binding.pry
         
         note = bypass_season_data.find  { |x| x['occupation'] == occupation}
         note['name']
         #binding.pry    
-    end 
+    
   end
 
 def count_contestants_by_hometown(data, hometown)

@@ -12,7 +12,7 @@ end
 def get_contestant_name(data, occupation)
   # code here
     
-      bypass_season_data = data.flatten[1]
+      bypass_season_data = data.flatten.each do |v|
         
         note = bypass_season_data.find  { |x| x['occupation'] == occupation}
         note['name']

@@ -14,7 +14,7 @@ def get_contestant_name(data, occupation)
     contestants_name = ""
       bypass_season_data = data.flatten[1]
         
-        bypass_season_data.find  do |x| 
+        note = bypass_season_data.find  do |x| 
           x['occupation'] == occupation
           x['name']
     end

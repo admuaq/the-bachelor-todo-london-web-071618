@@ -18,6 +18,7 @@ def get_contestant_name(data, occupation)
         contestants_name = v['name']
       else
         "Cant find Winner"
+      end 
       #binding.pry
       end
     end 

@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   # code here
     
       bypass_season_data = data.each {|v| v}
-      binding.pry
+      #binding.pry
         
         note = bypass_season_data.find  { |x| x['occupation'] == occupation}
         note['name']

@@ -12,13 +12,10 @@ end
 def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
-    data.map do |x|
+    data.each do |x|
       bypass_season_data = x[1].find do |v|
-        if v.include?('occupation') == occupation
-        contestants_name = v['name']
-      else
-        "Cant find Winner"
-      end 
+        v.include?('occupation') == occupation
+        v['name']
       #binding.pry
       end
     end 

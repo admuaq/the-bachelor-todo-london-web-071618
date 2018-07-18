@@ -16,7 +16,6 @@ def get_contestant_name(data, occupation)
         v['occupation'] == occupation}
         contestants_name = v['name']
       binding.pry
-    end 
   contestants_name
 end
 

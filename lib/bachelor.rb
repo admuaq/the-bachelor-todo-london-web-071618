@@ -13,11 +13,8 @@ def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
       bypass_season_data = data[1][1].find { |k, v|
-      binding.pry
-        v['occupation'] == occupation}
+        v['occupation'] == occupation binding.pry}
         contestants_name = v['name']
-      
-  contestants_name
 end
 
 def count_contestants_by_hometown(data, hometown)

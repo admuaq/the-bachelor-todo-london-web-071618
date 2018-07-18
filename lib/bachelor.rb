@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   # code here
     contestants_name = ""
       bypass_season_data = data[1][1].find { |k, v|
-        v['occupation'] == occupation binding.pry}
+        v['occupation'] == occupation}
         contestants_name = v['name']
 end
 

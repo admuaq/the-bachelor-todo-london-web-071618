@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   # code here
     data.each do |x|
     person = x[1].find {|y| y['occupation'] == occupation}
-      person['name']
+      puts person['name']
       binding.pry
     end 
   
